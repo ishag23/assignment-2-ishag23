@@ -6,10 +6,11 @@
  */
 package problem3.node;
 
-import problem1.node.TreeNode;
+import problem5.student.Student;
 
 public class Node {
-    public Node(TreeNode newnode) {
+    private Student data;
+    private Node next;
 
-    }
 }
+
