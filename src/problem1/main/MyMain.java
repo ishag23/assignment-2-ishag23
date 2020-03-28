@@ -7,5 +7,9 @@
 package problem1.main;
 // executable class
 
+import problem1.mybst.MyBinarySearchTree;
+import problem4.myqueue.MyQueue;
 public class MyMain {
+    MyBinarySearchTree m = new MyBinarySearchTree();
+    MyQueue queue = new MyQueue();
 }
