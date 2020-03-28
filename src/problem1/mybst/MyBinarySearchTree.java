@@ -17,13 +17,21 @@ public class MyBinarySearchTree {
     private MyQueue pre;
     private MyQueue post;
 
-    public MyBinarySearchTree(TreeNode newnode) {
-        this.newnode = newnode;
+    public MyBinarySearchTree() {
         tmp = null;
         root = null;
         MyBinarySearchTree.count = 0;
         post = new MyQueue();
         pre = new MyQueue();
+
+    }
+
+    public static int getCount() {
+        return count;
+    }
+
+    public static void setCount(int count) {
+        MyBinarySearchTree.count = count;
     }
 
     //setting root node
@@ -34,6 +42,44 @@ public class MyBinarySearchTree {
             tmp = root;
             newnode = null;
         }
+    }
+
+    public TreeNode getNewnode() {
+        return newnode;
+    }
+
+    public void setNewnode(TreeNode newnode) {
+        this.newnode = newnode;
+    }
+
+    public TreeNode getRoot() {
+        return root;
+    }
+
+    public void setRoot(TreeNode root) {
+        this.root = root;
+    }
+
+    public TreeNode getTmp() {
+        return tmp;
+    }
+
+    public void setTmp(TreeNode tmp) {
+        this.tmp = tmp;
+    }
+
+    public MyQueue getPre() {
+        return pre;
+    }
+
+    public void setPre(MyQueue pre) {
+        this.pre = pre;
+    }
+
+    public MyQueue getPost() {
+        return post;
+    }
+
 
     }
 
