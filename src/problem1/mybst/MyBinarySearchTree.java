@@ -80,7 +80,21 @@ public class MyBinarySearchTree {
         return post;
     }
 
+    public void setPost(MyQueue post) {
+        this.post = post;
+    }
+
+    //preorder
+    public void preOrder(TreeNode node) {
+        if (node == null) {
+            return;
+        }
+
+        preOrder(node.getLeft());
+        preOrder(node.getRight());
+    }
+
 
     }
 
-}
+
