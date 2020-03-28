@@ -94,6 +94,18 @@ public class MyBinarySearchTree {
         preOrder(node.getRight());
     }
 
+    //postorder
+    public void postOrder(TreeNode node) {
+        if (node == null) {
+            return;
+        }
+
+        postOrder(node.getLeft());
+        postOrder(node.getRight());
+
+    }
+
+
 
     }
 
