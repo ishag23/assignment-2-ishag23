@@ -6,5 +6,10 @@
  */
 package problem3.node;
 
+import problem1.node.TreeNode;
+
 public class Node {
+    public Node(TreeNode newnode) {
+
+    }
 }

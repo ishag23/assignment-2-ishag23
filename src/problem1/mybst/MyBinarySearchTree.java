@@ -7,6 +7,7 @@
 package problem1.mybst;
 
 import problem1.node.TreeNode;
+import problem3.node.Node;
 import problem4.myqueue.MyQueue;
 
 
@@ -105,8 +106,44 @@ public class MyBinarySearchTree {
 
     }
 
+    //setting binary tree
+    public void insert(TreeNode tmproot) {
+        if (newnode == null) {
+            newnode = new TreeNode();
+        }
+        try {
+            if (newnode.getData() <= tmproot.getData()) {
+                System.out.println("left transversing");
+                if (tmproot.getLeft() == null) {
+                    tmproot.setLeft(newnode);
+                    System.out.println("node which are inserted on left");
+                    pre.enqueue(new Node(newnode));
+                    newnode = null;
+                    return;
+                } else {
+                    System.out.println("left not empty changing tmproot ");
+                    insert(tmproot.getLeft());
+                }
+            }
+        } catch (NullPointerException ignore) {
+        }
+        try {
+            if (newnode.getData() > tmproot.getData()) {
+                System.out.println("Right transversing");
+                if (tmproot.getRight() == null) {
+                    tmproot.setRight(newnode);
+                    System.out.println("node which are inserted on right");
+                    newnode = null;
+                } else {
+                    System.out.println("right not empty changing tmproot ");
+                    insert(tmproot.getLeft());
+                }
+            }
+        } catch (NullPointerException ignore) {
+        }
 
 
     }
+}
 
 
