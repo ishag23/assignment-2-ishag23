@@ -26,4 +26,15 @@ public class MyBinarySearchTree {
         pre = new MyQueue();
     }
 
+    //setting root node
+    public void setRoot() {
+        TreeNode newnode = new TreeNode();
+        if (root == null) {
+            root = newnode;
+            tmp = root;
+            newnode = null;
+        }
+
+    }
+
 }
