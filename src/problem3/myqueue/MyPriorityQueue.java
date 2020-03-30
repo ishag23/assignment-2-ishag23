@@ -42,9 +42,9 @@ public class MyPriorityQueue {
                     size++;
                 } else {
                     Node first = front;
-                    while (first.getNext() != null) {
-                        if (node.getData().getRollNo() < (first.getNext()).getData().getRollNo() && node.getData().getRollNo() > first.getData().getRollNo()) {
-                            node.setNext(first.getNext());
+                    while (first.getNext(node) != null) {
+                        if (node.getData().getRollNo() < (first.getNext(node)).getData().getRollNo() && node.getData().getRollNo() > first.getData().getRollNo()) {
+                            node.setNext(first.getNext(node));
                             first.setNext(node);
                             size++;
                             break;
@@ -59,7 +59,7 @@ public class MyPriorityQueue {
         Node temp = front;
         while (temp != null) {
             System.out.println(temp.getData());
-            temp = temp.getNext();
+            temp = temp.getNext(node);
         }
 
     }

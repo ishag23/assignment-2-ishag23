@@ -18,10 +18,6 @@ public class Node {
         next = null;
     }
 
-    public Student getData() {
-        return data;
-    }
-
     public void setData(Student data) {
         this.data = data;
     }
@@ -36,6 +32,11 @@ public class Node {
 
     public Node getNode() {
         return null;
+    }
+
+    public int compareTo(Student data) {
+        return data.getRollNo() - this.data.getRollNo();
+
     }
 }
 
