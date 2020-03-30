@@ -57,4 +57,12 @@ public class Student {
         this.backlog = backlog;
     }
 
+    @Override
+    public String toString() {
+        return "name='" + name + '\'' +
+                ", rollno=" + rollno +
+                ", backlog=" + backlog +
+                ", apperingcount=" + appcount
+                ;
+    }
 }
