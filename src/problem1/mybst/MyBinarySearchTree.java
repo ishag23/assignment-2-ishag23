@@ -7,8 +7,8 @@
 package problem1.mybst;
 
 import problem1.node.TreeNode;
-import problem3.node.Node;
 import problem4.myqueue.MyQueue;
+import problem4.myqueue.Node;
 
 
 // to implement BinarySearchTree
