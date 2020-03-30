@@ -7,7 +7,6 @@
 package problem4.main;
 
 import problem1.mybst.MyBinarySearchTree;
-import problem2.main.Methods;
 import problem4.myqueue.MyQueue;
 
 import java.util.Scanner;
@@ -19,7 +18,7 @@ public class MyMain {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        Methods mthds = new Methods();
+        problem2.main.MyMain.Methods mthds = new problem2.main.MyMain.Methods();
         MyBinarySearchTree m = new MyBinarySearchTree();
         MyQueue q = new MyQueue();
 
@@ -37,4 +36,4 @@ public class MyMain {
 
     }
 }
-}
+
