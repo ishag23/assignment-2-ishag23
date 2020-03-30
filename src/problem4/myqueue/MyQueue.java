@@ -10,6 +10,25 @@ package problem4.myqueue;
 import problem3.node.Node;
 
 public class MyQueue {
+    private Node front, end, temp;
+    private int size;
+
+    public MyQueue() {
+        front = null;
+        end = null;
+        temp = null;
+        size = 0;
+    }
+
+
+
+
+
+
+
+
+
     public void enqueue(Node node) {
+
     }
 }
