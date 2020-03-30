@@ -58,6 +58,20 @@ public class MyCircularQueue {
         tmp.setNext(newNode);
     }
 
+    public void print() {
+        tmp = front;
+        try {
+            do {
+                System.out.println(tmp.getS().toString());
+                tmp = tmp.getNext();
+            }
+            while (tmp != end && tmp != null);
+        } catch (NullPointerException ignored) {
+        }
+
+    }
+
+
 
 
 }
