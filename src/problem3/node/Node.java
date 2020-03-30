@@ -6,7 +6,7 @@
  */
 package problem3.node;
 
-import problem5.student.Student;
+import problem3.Student;
 
 public class Node {
     private Student data;
@@ -37,6 +37,10 @@ public class Node {
     public int compareTo(Student data) {
         return data.getRollNo() - this.data.getRollNo();
 
+    }
+
+    public Student getData() {
+        return data;
     }
 }
 
