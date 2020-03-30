@@ -24,7 +24,7 @@ public class Node {
         this.node = node;
     }
 
-    public Node getNext(Node node) {
+    public Node getNext() {
         return next;
     }
 
