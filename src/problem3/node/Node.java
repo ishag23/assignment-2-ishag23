@@ -26,7 +26,7 @@ public class Node {
         this.data = data;
     }
 
-    public Node getNext() {
+    public Node getNext(Node node) {
         return next;
     }
 
@@ -34,6 +34,9 @@ public class Node {
         this.next = next;
     }
 
+    public Node getNode() {
+        return null;
+    }
 }
 
 
