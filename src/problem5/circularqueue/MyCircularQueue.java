@@ -65,10 +65,14 @@ public class MyCircularQueue {
                 System.out.println(tmp.getS().toString());
                 tmp = tmp.getNext();
             }
-            while (tmp != end && tmp != null);
+            while (tmp != front && tmp != null);
         } catch (NullPointerException ignored) {
         }
 
+    }
+
+    public void remove(String name) {
+        tmp = front
     }
 
 
