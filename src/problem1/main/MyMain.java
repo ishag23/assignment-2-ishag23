@@ -9,7 +9,8 @@ package problem1.main;
 
 import problem1.mybst.MyBinarySearchTree;
 import problem4.myqueue.MyQueue;
-public class MyMain {
+
+public class MyMain<i> {
     MyBinarySearchTree m = new MyBinarySearchTree();
     MyQueue queue = new MyQueue();
 }
